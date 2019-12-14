@@ -28,3 +28,5 @@ INPUT_TYPES = {
     "Local file on disk" : "LOCAL",
     "Public Accessible URL" : "URL"
 }
+
+MAIN_DATA_HOME = 'data'

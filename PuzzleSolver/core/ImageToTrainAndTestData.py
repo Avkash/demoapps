@@ -5,9 +5,11 @@ from PIL import Image
 import image_slicer
 import skimage.io
 
-image_knn_name = "data/temp_image.jpg"
 
 main_dir_home = 'data'
+
+image_knn_name = "data/temp_image.jpg"
+
 
 test_dir_home = 'data/test'
 test_image_prefix = 'test_img'

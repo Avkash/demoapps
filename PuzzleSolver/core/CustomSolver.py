@@ -51,8 +51,16 @@ def run_main(title, subtitle):
             problem_valid = filemgmt.validateLocalPath(problem_img_path)
             solution_valid = filemgmt.validateLocalPath(solution_file_path)
         else:
-            problem_valid = filemgmt.validateUrlPath(problem_img_path)
-            solution_valid = filemgmt.validateUrlPath(solution_file_path)
+            ##problem_valid = filemgmt.validateUrlPath(problem_img_path)
+            ##if problem_valid:
+            problem_valid, problem_img_path = filemgmt.processPuzzleUrl(problem_img_path)
+
+            ##solution_valid = filemgmt.validateUrlPath(solution_file_path)
+            ##if solution_valid:
+            solution_valid, solution_file_path = filemgmt.processSolutionUrl(solution_file_path)
+
+        st.write(problem_img_path)
+        st.write(solution_file_path)
 
         if (problem_valid and solution_valid):
             st.write("Success: Both file contents are valid..")
