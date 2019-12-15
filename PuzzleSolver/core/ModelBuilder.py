@@ -152,8 +152,6 @@ def generate_final_mapping_list(knn, E_test_flatten):
     final_list_map = {}
     for i, emb_flatten in enumerate(E_test_flatten):
         _, indices = knn.kneighbors([emb_flatten])
-        ##print(i , "--" , indices)
-        ##print(i , "--" , indices[0][0])
         final_list_map[i] = indices[0][0]
     return final_list_map
 

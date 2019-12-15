@@ -14,8 +14,8 @@ MENU = {
     "Home" : src.pages.home,
     "Puzzle Solver (Quick Demo)" : src.pages.solverdemo,
     "Puzzle Solver (Walkthrough Demo)" : src.pages.solver,
-    "Solve your own puzzle" : src.pages.solverc,
-    "Source Code Review" : src.pages.codereview,
+    "Solve puzzle (Bring your images)" : src.pages.solverc,
+    "Source Review (How to?)" : src.pages.codereview,
     "Credits" : src.pages.about
 }
 
@@ -29,7 +29,7 @@ def main():
         udisp.render_page(menu)
 
     st.sidebar.info(
-        "Puzzle Solver"
+        "https://github.com/Avkash/demoapps/tree/master/PuzzleSolver"
     )
 
 if __name__ == "__main__":
