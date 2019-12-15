@@ -11,13 +11,19 @@ main_dir_home = 'data'
 image_knn_name = "data/temp_image.jpg"
 
 
-test_dir_home = 'data/test'
+test_dir_home = 'tempdata/test'
 test_image_prefix = 'test_img'
 
-train_dir_home = 'data/train'
+train_dir_home = 'tempdata/train'
 train_image_prefix = 'train_img'
 
 all_image_format = "jpeg"
+
+def create_dir_if_not_exisit(dir_name):
+    outDir = os.path.join(os.getcwd(), dir_name)
+    if not os.path.exists(outDir):
+        os.makedirs(outDir)
+    return outDir
 
 ## Shuffle image
 def generate_training_data(image_np, row_col):
@@ -36,6 +42,7 @@ def save_image_to_disk_from_np_array(passed_image_np):
     return image_knn_name
 
 def generate_train_n_test_data_from_image(image_url, row_col, data_dir, img_prefix):
+    create_dir_if_not_exisit(data_dir)
     ## Generating Test Images -> From shuffled Image
     ## Removing previous files (if found)
     for root, dirs, files in os.walk(data_dir):
