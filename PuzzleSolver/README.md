@@ -1,1 +1,4 @@
-## To run the app, just clone the repo, go to PuzzleSolver
+## To run the app:
+ - Just clone the repo
+ - Go to PuzzleSolver
+ - $ streamlit run app.py
