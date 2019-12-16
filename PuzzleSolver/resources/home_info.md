@@ -3,7 +3,7 @@
 ![Puzzle > Solution](https://github.com/Avkash/mldl/blob/master/images/puzzle-info.png?raw=true)
 
 ## 👈 What you need
-- You need a shuffle image and a solution image to use this demo. 
+- You need a the shuffle block image and a solution image to use this demo. 
 - The shuffle image will be used as training data
 - The solution image will be used a test data
 

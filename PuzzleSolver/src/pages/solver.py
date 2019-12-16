@@ -7,8 +7,5 @@ import streamlit as st
 
 def write():
     udisp.title_awesome("Step by Step Walkthrough")
-    CoreSolver.run_main("Title", "Subtitle")
+    CoreSolver.run_main("Configration", "Just select the image, model type and puzzle size, and GO")
     
-def solve_custom():
-    udisp.title_awesome("Step by Step Walkthrough")
-    CoreSolver.run_main("Title", "Subtitle")

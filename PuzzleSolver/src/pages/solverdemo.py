@@ -7,5 +7,5 @@ import streamlit as st
 
 def write():
     udisp.title_awesome("Puzzle Solver")    
-    SolverQuickDemo.run_main("Title", "Subtitle")
+    SolverQuickDemo.run_main("Info", "Just select the image, model type and puzzle size, and GO")
     

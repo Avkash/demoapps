@@ -6,7 +6,7 @@
 
 ## Before your start.....
 - 1: Please select the puzzle size from 3x3 | 4x4 | 5x5 from left side bar menu.
-- 2: Please select a deep learing network (if you would like) 
+- 2: Please select a deep learning network (if you would like) 
 - 3: Please suggest weather puzzle image files are located on local disk or hosted on a URL.
 
 ## Select puzzle image and targer solution image
