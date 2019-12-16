@@ -7,6 +7,7 @@ import skimage.io
 
 
 main_dir_home = 'data'
+main_temp_dir_home = 'tempdata'
 
 image_knn_name = "data/temp_image.jpg"
 
@@ -61,7 +62,7 @@ def load_images_into_memory(file_list, img_prefix, img_file_type):
         start = str(file).find(img_prefix)
         end = len(str(file))
         fname = str(file)[start:end-1]
-        fname = os.path.join(os.getcwd(), main_dir_home, img_file_type , fname)
+        fname = os.path.join(os.getcwd(), main_temp_dir_home, img_file_type , fname)
         img = skimage.io.imread(fname, as_gray=False)
         imgs.append(img)
     return imgs
