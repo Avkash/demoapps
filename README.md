@@ -2,4 +2,4 @@
 All kind of applications related to AI, ML, Data Science, Jetson, IoT, Visualization
 
 ## PuzzleSolver
-- ![Puzzle > Solution](https://github.com/Avkash/mldl/blob/master/images/puzzle-info.png?raw=true)
+- ![Puzzle > Solution](https://miro.medium.com/max/1600/1*vIpP4LvNcMJ9ZaQrkglCqA.png)
