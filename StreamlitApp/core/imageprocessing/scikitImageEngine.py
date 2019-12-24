@@ -7,6 +7,7 @@ import numpy as np
 
 import utils.globalDefine as globalDefine
 import core.imageprocessing.imgGrayscale as imgGrayscale
+import core.imageprocessing.imgResize as imgResize
 
 def calc_main(title, subtitle):
     st.write("Scikit Image Demo")    
@@ -32,5 +33,8 @@ def calc_main(title, subtitle):
     if op_selected == 'RGB2HSL':
         img = imgGrayscale.convert_color_to_grayscale(image)
         st.image(img, width=400)
+    if op_selected == 'RESIZE':
+        img = imgResize.process_resize(image)
+        st.image(img)
     else:
         st.write("Thanks!!")

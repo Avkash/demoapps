@@ -10,5 +10,6 @@ IMGPROC_TYPES = {
     "Color(RGB) to Grayscale transformation" : "GRAYSCALE",
     "Color(RGB) to Grayscale(Hue,Saturation,Value) transformation" : "RGB2HSV",
     "Color(RGB) to Grayscale(Hue,Saturation,:ightness) transformation" : "RGB2HSL",
+    "Resize Image" : "RESIZE", 
     "Public Accessible URL" : "URL"
 }
