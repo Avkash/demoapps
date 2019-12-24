@@ -6,6 +6,16 @@ OPERATOR_LIST = {
     "/": "DIVISION"
 }
 
+IMAGE_LIST = {
+    "Color image of the astronaut Eileen Collins." : "ASTRONAUT",
+    "Checker Board": "CHECKER",
+    "Greek coins from Pompeii": "COINS",
+    "Hubble eXtreme Deep Field": "HUBBLE",
+    "Horse" : "HORSE",
+    "Coffee Cup": "COFFEE"
+}
+
+
 IMGPROC_TYPES = {
     "Color(RGB) to Grayscale transformation" : "GRAYSCALE",
     "Color(RGB) to Grayscale(Hue,Saturation,Value) transformation" : "RGB2HSV",

@@ -6,6 +6,7 @@ from skimage import data
 import numpy as np
 
 import utils.globalDefine as globalDefine
+import core.imageprocessing.imgSelection as imgSelection
 import core.imageprocessing.imgGrayscale as imgGrayscale
 import core.imageprocessing.imgResize as imgResize
 
@@ -17,7 +18,11 @@ def calc_main(title, subtitle):
         subtitle
     )
 
-    image = data.astronaut()
+    img_keys = globalDefine.IMAGE_LIST.keys()    
+    img_id = st.sidebar.selectbox("Select Image: ", list(img_keys))
+    img_selected = globalDefine.IMAGE_LIST.get(img_id)
+
+    image = imgSelection.process_selection(img_selected)
     st.image(image,  width=400)
 
     op_keys = globalDefine.IMGPROC_TYPES.keys()    
