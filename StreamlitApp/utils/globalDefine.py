@@ -21,5 +21,8 @@ IMGPROC_TYPES = {
     "Color(RGB) to Grayscale(Hue,Saturation,Value) transformation" : "RGB2HSV",
     "Color(RGB) to Grayscale(Hue,Saturation,:ightness) transformation" : "RGB2HSL",
     "Resize Image" : "RESIZE", 
-    "Public Accessible URL" : "URL"
+    "Image Rotation (Select Angle)" : "ROTATION", 
+    "Flipping Image (Horizontal and Vertical)" : "FLIP", 
+    "Alter Image Brightness" : "BRIGHTNESS", 
+    "Image Filter (Smooth & Sobel)" : "FILTER"
 }

@@ -41,5 +41,7 @@ def calc_main(title, subtitle):
     if op_selected == 'RESIZE':
         img = imgResize.process_resize(image)
         st.image(img)
+        if st.checkbox("Show code? "):
+            st.write("Show code")
     else:
         st.write("Thanks!!")
