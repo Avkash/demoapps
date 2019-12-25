@@ -11,6 +11,8 @@ def process_selection(img_selected):
         return data.hubble_deep_field()
     if img_selected == "HORSE":
         return data.horse()
+    if img_selected == "CAMERA":
+        return data.camera()
     if img_selected == "COFFEE":
         return data.coffee()
     else:
