@@ -3,6 +3,7 @@ from datetime import datetime
 
 import numpy as np
 
+import utils.display as display
 import utils.globalDefine as globalDefine
 
 def calc_main(title, subtitle):
@@ -53,4 +54,5 @@ def calc_main(title, subtitle):
         elif op_selected == "DIVISION":
             st.write("The division is ", num1 / num2)
 
-    
+    if st.checkbox("Show source code? "):
+        st.code(display.show_code("core/calculator/CalcEngine.py"))

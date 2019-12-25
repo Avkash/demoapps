@@ -20,3 +20,6 @@ def render_md(md_file_name):
 def get_file_content_as_string(path):
     response = open(path, encoding="utf-8").read()
     return response
+
+def show_code(file_name):
+    return get_file_content_as_string(file_name)

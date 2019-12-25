@@ -5,6 +5,7 @@ from skimage import data
 
 import numpy as np
 
+import utils.display as display
 import utils.globalDefine as globalDefine
 import core.imageprocessing.imgSelection as imgSelection
 import core.imageprocessing.imgGrayscale as imgGrayscale
@@ -12,7 +13,7 @@ import core.imageprocessing.imgResize as imgResize
 import core.imageprocessing.imgRotation as imgRotation
 import core.imageprocessing.imgFlip as imgFlip
 import core.imageprocessing.imgBrightness as imgBrightness
-import core.imageprocessing.imgFliters as imgFliters
+import core.imageprocessing.imgFilters as imgFilters
 import core.imageprocessing.imgSegmentation as imgSegmentation
 
 
@@ -38,41 +39,47 @@ def calc_main(title, subtitle):
     if op_selected == "GRAYSCALE":
         img = imgGrayscale.convert_color_to_grayscale(image)
         st.image(img, width=400)
+        if st.checkbox("Show source code? "):
+            st.code(display.show_code("core/imageprocessing/imgGrayscale.py"))
     if op_selected == 'RGB2HSV':
         img = imgGrayscale.convert_color_to_rgb2hsv(image)
         st.image(img, width=400)
+        if st.checkbox("Show source code? "):
+            st.code(display.show_code("core/imageprocessing/imgGrayscale.py"))
     if op_selected == 'RGB2HSL':
         img = imgGrayscale.convert_color_to_rgb2hsl(image)
         st.image(img, width=400)
+        if st.checkbox("Show source code? "):
+            st.code(display.show_code("core/imageprocessing/imgGrayscale.py"))
     if op_selected == 'RESIZE':
         img = imgResize.process_resize(image)
         st.image(img)
-        if st.checkbox("Show code? "):
-            st.write("Show code")
+        if st.checkbox("Show source code? "):
+            st.code(display.show_code("core/imageprocessing/imgResize.py"))
     if op_selected == 'ROTATION':
         img = imgRotation.process_rotation(image)
         st.image(img)
-        if st.checkbox("Show code? "):
-            st.write("Show code")
+        if st.checkbox("Show source code? "):
+            st.code(display.show_code("core/imageprocessing/imgRotation.py"))
     if op_selected == 'FLIP':
         img = imgFlip.process_flip(image)
         st.image(img)
-        if st.checkbox("Show code? "):
-            st.write("Show code")
+        if st.checkbox("Show source code? "):
+            st.code(display.show_code("core/imageprocessing/imgFlip.py"))
     if op_selected == 'BRIGHTNESS':
         img = imgBrightness.process_brightness(image)
         st.image(img)
-        if st.checkbox("Show code? "):
-            st.write("Show code")
+        if st.checkbox("Show source code? "):
+            st.code(display.show_code("core/imageprocessing/imgBrightness.py"))
     if op_selected == 'FILTER':
-        img = imgFliters.process_filters(image)
+        img = imgFilters.process_filters(image)
         st.image(img, width=300)
-        if st.checkbox("Show code? "):
-            st.write("Show code")
+        if st.checkbox("Show source code? "):
+            st.code(display.show_code("core/imageprocessing/imgFilters.py"))
     if op_selected == "SEGMENTATION":
         img = imgSegmentation.process_segmentation(image)
         st.image(img, width=300)
-        if st.checkbox("Show code? "):
-            st.write("Show code")
+        if st.checkbox("Show source code? "):
+            st.code(display.show_code("core/imageprocessing/imgSegmentation.py"))
     else:
         st.write("Thanks!!")
