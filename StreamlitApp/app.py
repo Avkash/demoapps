@@ -5,11 +5,13 @@ import utils.display as udisp
 import src.pages.home
 import src.pages.about
 import src.pages.calculator
+import src.pages.compound
 import src.pages.scikit_image
 
 MENU = {
     "Home" : src.pages.home,
-    "Calculator Demo" : src.pages.calculator,
+    "Simple Calculator" : src.pages.calculator,
+    "Calculate Compound Interest" : src.pages.compound,
     "Scikit Image Demo" : src.pages.scikit_image,
     "Credits" : src.pages.about
 }

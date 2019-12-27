@@ -6,6 +6,11 @@ OPERATOR_LIST = {
     "/": "DIVISION"
 }
 
+CI_CHOICE = {
+    "Yearly (1 time in Year)" : "YEARLY",
+    "Monthly (12 times in a year)" : "MONTHLY"
+}
+
 IMAGE_LIST = {
     "Color image of the astronaut Eileen Collins." : "ASTRONAUT",
     "Checker Board": "CHECKER",

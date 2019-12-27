@@ -21,17 +21,17 @@ def process_filters(img_orig):
     if filter_choice == "MEDIAN":
         max_val = 30
         val = 10
-        val = st.slider("Select image rotation angle between 0 to {}:".format(max_val), 0,max_val,val,1)
+        val = st.slider("Select mask between 0 to {}:".format(max_val), 0,max_val,val,1)
         return filters.median(img_orig, np.ones((val, val)))
     if filter_choice == "GAUSSIAN":
         max_val = 20
         val = 5
-        val = st.slider("Select image rotation angle between 0 to {}:".format(max_val), 0,max_val,val,1)
+        val = st.slider("Select sigma value between 0 to {}:".format(max_val), 0,max_val,val,1)
         return filters.gaussian(img_orig, sigma=(0.1, float(val)), truncate=3.5, multichannel=True)
     if filter_choice == 'RESTORATION':
         max_val = 10
         val = 5
-        val = st.slider("Select image rotation angle between 0 to {}:".format(max_val), 0,max_val,val,1)
+        val = st.slider("Select weight between 1 to {}:".format(max_val), 1,max_val,val,1)
         return restoration.denoise_tv_chambolle(img_orig, weight=float(val/10))
     if filter_choice == "SOBEL":
         return filters.sobel(img_orig, mask=None)
