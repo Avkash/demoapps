@@ -1,6 +1,6 @@
 # Streamlit App : Application Template 
 ## 👈 The demo application UI  
-![Streamlit App UI](https://github.com/Avkash/mldl/blob/master/images/streamlitapp.png?raw=true)
+![Streamlit App UI](https://github.com/Avkash/mldl/blob/master/images/streamlit-demo.png?raw=true)
 
 ## 👈 How it works
 - You just need to clone the repo and get this particular folder 'StreamlitApp'
