@@ -11,4 +11,5 @@ tempdata/
 .idea/vcs.xml
 .idea/misc.xml
 .idea/coreapi.iml
+node_modules/
 
