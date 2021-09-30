@@ -12,4 +12,5 @@ tempdata/
 .idea/misc.xml
 .idea/coreapi.iml
 node_modules/
+package-lock.json
 
