@@ -1,0 +1,34 @@
+azure-ai-formrecognizer==3.1.1
+azure-cognitiveservices-vision-computervision==0.9.0
+azure-cognitiveservices-vision-customvision==3.1.0
+azure-cognitiveservices-vision-face==0.5.0
+azure-common==1.1.27
+azure-core==1.15.0
+azure-storage-blob==12.8.1
+conda==4.9.2
+conda-build==3.18.11
+conda-package-handling==1.7.0+0.g7c4a471.dirty
+conda-verify==3.4.2
+imageio @ file:///tmp/build/80754af9/imageio_1594161405741/work
+imagesize==1.2.0
+json5==0.9.5
+jupyter==1.0.0
+jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1594826976318/work
+jupyter-console==6.1.0
+jupyter-core==4.6.3
+jupyterlab==2.1.5
+jupyterlab-server @ file:///tmp/build/80754af9/jupyterlab_server_1594164409481/work
+notebook==6.0.3
+numpy==1.18.5
+pandas @ file:///opt/concourse/worker/volumes/live/5ef6147e-ea92-446e-4065-0c8c7435293f/volume/pandas_1592841676717/work
+Pillow @ file:///opt/concourse/worker/volumes/live/be1e8a56-c4be-4ffe-4fa7-5a0e9c460b1a/volume/pillow_1594307312933/work
+pkginfo==1.5.0.1
+python-dateutil==2.8.1
+python-dotenv==0.15.0
+PyYAML==5.3.1
+scikit-image==0.16.2
+scikit-learn @ file:///opt/concourse/worker/volumes/live/47a3ec7c-70dc-43c0-7317-def24a8afaf5/volume/scikit-learn_1592503037057/work
+scipy @ file:///opt/concourse/worker/volumes/live/7f5e51f8-abf3-4409-4c56-a4fb14cc9869/volume/scipy_1593104185999/work
+seaborn==0.10.1
+urllib3==1.25.9
+video-indexer==0.1.8
